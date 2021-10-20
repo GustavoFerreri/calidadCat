@@ -1,11 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
 body {
-  with: 100wh;
-  height: 50vw;
-  background-color: Black;
+  background-color: White;
+  font-size: 5 em;
   font-family: courier, arial, helvética;
 }
 header {
-  height: 25vh;
-  background-color: White;
+  height: 20vh;
+  color: #c0b283;
+}
+header img {
+  width: 10em;
+  height: 6em;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+main {
+  height: 75vh;
+}
+footer {
+  height: 5vh;
   color: #c0b283;
 }
