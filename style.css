@@ -1,0 +1,11 @@
+body {
+  with: 100wh;
+  height: 50vw;
+  background-color: Black;
+  font-family: courier, arial, helvética;
+}
+header {
+  height: 25vh;
+  background-color: White;
+  color: #c0b283;
+}
