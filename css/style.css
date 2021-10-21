@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+body {
+  background-color: White;
+  font-size: 5 em;
+  font-family: courier, arial, helvética;
+}
+header {
+  height: 10vh;
+  color: #005B9A;
+}
+header img {
+  width: 10em;
+  height: 6em;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+header h1{
+    font-size: 2em;
+}
+main {
+  height: 86vh;
+}
+
+footer {
+  height: 4vh;
+  color: #005B9A;
+}
+.bg-color{
+    background-color: White;
+    opacity: 0.9;
+}
