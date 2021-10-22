@@ -19,13 +19,12 @@ header img {
   margin-top: 5%;
   margin-left: 10%;
 }
-header h1{
-    font-size: 2em;
-}
 main {
   height: 86vh;
 }
-
+.textMain{
+    margin-top: 15%;
+}
 footer {
   height: 4vh;
   color: #005B9A;
