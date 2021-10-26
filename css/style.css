@@ -1,56 +1,57 @@
 * {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-body {
-  background: #fff;
-  max-width: 1600px;
-  margin: 0 auto;
-  overflow: hidden;
-  font-family: "Rajdhani", sans-serif;
-  font-size: 24px;
+html {
+    font-size: 62.5%;
+    font-family: "Rajdhani", sans-serif;
+    background: #fff;
 }
 header {
-  height: 10vh;
-  color: #005B9A;
+    height: 10vh;
+    color: #005B9A;
 }
 header img {
-  width: 7em;
-  height: 3em;
-  margin-top: 5%;
-  margin-left: 10%;
+    width: 15em;
+    height: 9em;
+    margin-top: 5%;
+    margin-left: 10%;
 }
 header h1{
-    margin-left: 1em;
+    font-size: 2em;
+    margin-left: 2em;
 }
 header ul li{
-    font-size: 0.7em;
+    font-size: 1.7em;
 }
-main {
-  height: 86vh;
+main > div {
+    font-size: 2em;
 }
 .textMain{
     margin-top: 15%;
 }
 .textTitle {
-    font-size: 0.7em;
+    font-size: 1.5em;
     color: rgba(90, 117, 136, 0.425);
     margin-left: 3%;
     margin-top: 2em;
+}
+.textSubTitle{
+    font-size: 1.2em;
+    color: rgba(90, 117, 136, 0.350);
+    margin-top: 1em;  
 }
 .space{
     margin-top: 2%;
 }
 .selectPlace{
-    font-size: 0.9 em;
+    font-size: 1.2 em;
     font-style: italic;
     color: rgba(127, 161, 185, 0.2);
 }
 ::placeholder{
-    font-size: 0.9 em;
+    font-size: 1.2em;
     font-style: italic;
     color: rgba(127, 161, 185, 0.2);
 }

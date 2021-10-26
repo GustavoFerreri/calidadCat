@@ -1,9 +1,10 @@
 <html>
     <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
         <!-- Titulo de la web -->
         <title>Calidad Cat Groupe</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link href="../css/style.css" rel="stylesheet" type="text/css">
     </head>
@@ -18,7 +19,7 @@
                     </div>
                     <!-- Titulo -->
                     <div class="col-lg-4 col-sm-4">
-                        <h1 class="display-5 font-weight-bold">Departamento LC</h1>
+                        <h1 class="display-4 font-weight-bold">Departamento LC</h1>
                     </div>
                     <!-- Barra de navegacion -->
                     <div class="col-lg-6 col-sm-6 small text-center ">
@@ -31,16 +32,16 @@
                                     <li class="nav-item dropdown">
                                         <a href="" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Auditorias</a>
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item small" href="./auditoriaCalidad.html">Calidad</a>
-                                            <a class="dropdown-item small" href="./auditoriaMedio.html">Medio</a>
+                                            <a class="dropdown-item" href="./auditoriaCalidad.html">Calidad</a>
+                                            <a class="dropdown-item" href="./auditoriaMedio.html">Medio</a>
                                         </div>
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a href="" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Busqueda</a>
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item small" href="./busquedaChofer.html">Choferes</a>
-                                            <a class="dropdown-item small" href="./busquedaUnidades.html">Unidades</a>
-                                            <a class="dropdown-item small" href="./busquedaFletero.html">Fleteros</a>
+                                            <a class="dropdown-item" href="./busquedaChofer.html">Choferes</a>
+                                            <a class="dropdown-item" href="./busquedaUnidades.html">Unidades</a>
+                                            <a class="dropdown-item" href="./busquedaFletero.html">Fleteros</a>
                                         </div>
                                     </li>
                                     <li class="nav-item">
@@ -61,11 +62,277 @@
         </header>
         <main class="container-fluid">
             <span class="text-monospace font-weight-bolder textTitle">Auditoria Medio</span>
-            <div class="container space"></div>
+            <div class="container space">
+                <div class="form-group">
+                    <form>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Fecha</span>
+                            </div>
+                            <input type="text" name="fecha" class="form-control text-center" placeholder="Que dia se realizo?"/>
+                            <input type="text" name="hora" class="form-control text-center" placeholder="A que hora?"/>
+                            <select class="custom-select" id="inputGroupSelect01">
+                                <option selected class="selectPlace">Seleccione donde se realizo</option>
+                                <option value="1">Recepcion</option>
+                                <option value="2">Expedicion nueva</option>
+                                <option value="3">Expedicion Alero</option>
+                            </select>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text ">Empresa</span>
+                            </div>
+                            <input type="text" name="empresa" class="form-control text-center" placeholder="A que empresa pertenece?"/>
+                            <div class="input-group-prepend">
+                                <span class="input-group-text ">Chofer</span>
+                            </div>
+                            <input type="text" name="nombre" class="form-control text-center" placeholder="Ingrese el nombre aquí"/>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text ">Unidad</span>
+                            </div>
+                            <input type="text" name="patente" class="form-control text-center" placeholder="Patente"/>
+                            <input type="text" name="marca" class="form-control text-center" placeholder="Marca"/>
+                            <input type="text" name="modelo" class="form-control text-center" placeholder="Modelo"/>
+                        </div>
+                        <span class="text-monospace font-weight-bolder textSubTitle">Chofer</span>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text ">Uniforme</span>
+                            </div>
+                            <select class="custom-select" id="uniformeCompleto">
+                                <option selected class="selectPlace">Evaluación</option>
+                                <option value="2">No aplica</option>
+                                <option value="0">Insatisfactorio</option>
+                                <option value="1">Regular</option>
+                                <option value="2">Satisfactorio</option>
+                            </select>
+                            <input type="text" name="patente" class="form-control text-center" placeholder="Observaciones"/>
+                        </div>
+                        <span class="text-monospace font-weight-bolder textSubTitle">Tractor</span>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text ">Luces Tres maria</span>
+                            </div>
+                            <select class="custom-select" id="lucesTresMaria">
+                                <option selected class="selectPlace">Evaluación</option>
+                                <option value="2">No aplica</option>
+                                <option value="0">Insatisfactorio</option>
+                                <option value="1">Regular</option>
+                                <option value="2">Satisfactorio</option>
+                            </select>
+                            <input type="text" name="lucesTresMariaObservacion" class="form-control text-center" placeholder="Observaciones"/>
+                        </div>
+                                                <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text ">Retroreflectivo 80v/max</span>
+                            </div>
+                            <select class="custom-select" id="reflectivoOcho">
+                                <option selected class="selectPlace">Evaluación</option>
+                                <option value="2">No aplica</option>
+                                <option value="0">Insatisfactorio</option>
+                                <option value="1">Regular</option>
+                                <option value="2">Satisfactorio</option>
+                            </select>
+                            <input type="text" name="reflectivoObservacion" class="form-control text-center" placeholder="Observaciones"/>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text ">Placas patentes</span>
+                            </div>
+                            <select class="custom-select" id="placasPatente">
+                                <option selected class="selectPlace">Evaluación</option>
+                                <option value="2">No aplica</option>
+                                <option value="0">Insatisfactorio</option>
+                                <option value="1">Regular</option>
+                                <option value="2">Satisfactorio</option>
+                            </select>
+                            <input type="text" name="placasPatenteObservacion" class="form-control text-center" placeholder="Observaciones"/>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text ">Matafuego 5kg</span>
+                            </div>
+                            <select class="custom-select" id="matafuego">
+                                <option selected class="selectPlace">Evaluación</option>
+                                <option value="2">No aplica</option>
+                                <option value="0">Insatisfactorio</option>
+                                <option value="1">Regular</option>
+                                <option value="2">Satisfactorio</option>
+                            </select>
+                            <input type="text" name="matafuego" class="form-control text-center" placeholder="Observaciones"/>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Estado instalación eléctrica/ Funcionamiento de luces</span>
+                            </div>
+                            <select class="custom-select" id="lucesFuncionamiento">
+                                <option selected class="selectPlace">Evaluación</option>
+                                <option value="2">No aplica</option>
+                                <option value="0">Insatisfactorio</option>
+                                <option value="1">Regular</option>
+                                <option value="2">Satisfactorio</option>
+                            </select>
+                            <input type="text" name="lucesFuncionamiento" class="form-control text-center" placeholder="Observaciones"/>
+                        </div>
+                        <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                                <span class="input-group-text">Estado parabrisas y presencia escobillalimpiaparabrisas</span>
+                            </div>
+                            <select class="custom-select" id="parabrisas">
+                                <option selected class="selectPlace">Evaluación</option>
+                                <option value="2">No aplica</option>
+                                <option value="0">Insatisfactorio</option>
+                                <option value="1">Regular</option>
+                                <option value="2">Satisfactorio</option>
+                            </select>
+                            <input type="text" name="parabrisas" class="form-control text-center" placeholder="Observaciones"/>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Estado de cubiertas y llantas, incluyeauxilio.</span>
+                            </div>
+                            <select class="custom-select" id="cubiertas">
+                                <option selected class="selectPlace">Evaluación</option>
+                                <option value="2">No aplica</option>
+                                <option value="0">Insatisfactorio</option>
+                                <option value="1">Regular</option>
+                                <option value="2">Satisfactorio</option>
+                            </select>
+                            <input type="text" name="cubiertas" class="form-control text-center" placeholder="Observaciones"/>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Espejos retrovisores</span>
+                            </div>
+                            <select class="custom-select" id="espejos">
+                                <option selected class="selectPlace">Evaluación</option>
+                                <option value="2">No aplica</option>
+                                <option value="0">Insatisfactorio</option>
+                                <option value="1">Regular</option>
+                                <option value="2">Satisfactorio</option>
+                            </select>
+                            <input type="text" name="espejos" class="form-control text-center" placeholder="Observaciones"/>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Conexiones elecectricas aereas, aceite e hidraulica </span>
+                            </div>
+                            <select class="custom-select" id="elctricaHidro">
+                                <option selected class="selectPlace">Evaluación</option>
+                                <option value="2">No aplica</option>
+                                <option value="0">Insatisfactorio</option>
+                                <option value="1">Regular</option>
+                                <option value="2">Satisfactorio</option>
+                            </select>
+                            <input type="text" name="elctricaHidro" class="form-control text-center" placeholder="Observaciones"/>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Perdida de Gasoil o fluidos</span>
+                            </div>
+                            <select class="custom-select" id="lucesTresMaria">
+                                <option selected class="selectPlace">Evaluación</option>
+                                <option value="2">No aplica</option>
+                                <option value="0">Insatisfactorio</option>
+                                <option value="1">Regular</option>
+                                <option value="2">Satisfactorio</option>
+                            </select>
+                            <input type="text" name="lucesTresMariaObservacion" class="form-control text-center" placeholder="Observaciones"/>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Luces Tres maria</span>
+                            </div>
+                            <select class="custom-select" id="lucesTresMaria">
+                                <option selected class="selectPlace">Evaluación</option>
+                                <option value="2">No aplica</option>
+                                <option value="0">Insatisfactorio</option>
+                                <option value="1">Regular</option>
+                                <option value="2">Satisfactorio</option>
+                            </select>
+                            <input type="text" name="lucesTresMariaObservacion" class="form-control text-center" placeholder="Observaciones"/>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Luces Tres maria</span>
+                            </div>
+                            <select class="custom-select" id="lucesTresMaria">
+                                <option selected class="selectPlace">Evaluación</option>
+                                <option value="2">No aplica</option>
+                                <option value="0">Insatisfactorio</option>
+                                <option value="1">Regular</option>
+                                <option value="2">Satisfactorio</option>
+                            </select>
+                            <input type="text" name="lucesTresMariaObservacion" class="form-control text-center" placeholder="Observaciones"/>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Luces Tres maria</span>
+                            </div>
+                            <select class="custom-select" id="lucesTresMaria">
+                                <option selected class="selectPlace">Evaluación</option>
+                                <option value="2">No aplica</option>
+                                <option value="0">Insatisfactorio</option>
+                                <option value="1">Regular</option>
+                                <option value="2">Satisfactorio</option>
+                            </select>
+                            <input type="text" name="lucesTresMariaObservacion" class="form-control text-center" placeholder="Observaciones"/>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Luces Tres maria</span>
+                            </div>
+                            <select class="custom-select" id="lucesTresMaria">
+                                <option selected class="selectPlace">Evaluación</option>
+                                <option value="2">No aplica</option>
+                                <option value="0">Insatisfactorio</option>
+                                <option value="1">Regular</option>
+                                <option value="2">Satisfactorio</option>
+                            </select>
+                            <input type="text" name="lucesTresMariaObservacion" class="form-control text-center" placeholder="Observaciones"/>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Luces Tres maria</span>
+                            </div>
+                            <select class="custom-select" id="lucesTresMaria">
+                                <option selected class="selectPlace">Evaluación</option>
+                                <option value="2">No aplica</option>
+                                <option value="0">Insatisfactorio</option>
+                                <option value="1">Regular</option>
+                                <option value="2">Satisfactorio</option>
+                            </select>
+                            <input type="text" name="lucesTresMariaObservacion" class="form-control text-center" placeholder="Observaciones"/>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Luces Tres maria</span>
+                            </div>
+                            <select class="custom-select" id="lucesTresMaria">
+                                <option selected class="selectPlace">Evaluación</option>
+                                <option value="2">No aplica</option>
+                                <option value="0">Insatisfactorio</option>
+                                <option value="1">Regular</option>
+                                <option value="2">Satisfactorio</option>
+                            </select>
+                            <input type="text" name="lucesTresMariaObservacion" class="form-control text-center" placeholder="Observaciones"/>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Comentarios">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">Agregar</button>
+                                <button class="btn btn-danger" type="button">Cancel</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </main>
-        <footer>
+        <footer class="container-fluid">
             <div class="container text-center">
-                <h5 class="display-4 small">Departamento Logística de Cargas</h5>
+                <h5 class="display-5">Departamento Logística de Cargas</h5>
             </div>
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
